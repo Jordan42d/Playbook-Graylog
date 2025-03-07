@@ -1,5 +1,10 @@
 # Tuto d'installation de Graylog avec Ansible sur Debian 11
 
+## Étape 0 : Installer Ansible
+
+Bien évidemment, si vous n'avez pas Ansible sur votre machine, installez-le avec la commande suivante : apt-install ansible
+
+
 ## Étape 1 : Préparer les fichiers nécessaires
 
 Tout d'abord, vous devez transférer les fichiers suivants sur votre machine Debian 11 :
