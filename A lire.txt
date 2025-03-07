@@ -1,0 +1,27 @@
+# Tuto d'installation de Graylog avec Ansible sur Debian 11
+
+## Étape 1 : Préparer les fichiers nécessaires
+
+Tout d'abord, vous devez transférer les fichiers suivants sur votre machine Debian 11 :
+
+- templates/
+    - graylog.conf.j2
+- graylog.yml
+
+Vous pouvez transférer ces fichiers dans un répertoire de votre choix sur votre machine.
+
+## Étape 2 : Exécuter le playbook Ansible
+
+Une fois les fichiers transférés, ouvrez un terminal et exécutez la commande suivante pour lancer le playbook Ansible :
+
+ansible-playbook graylog.yml
+
+Cela permettra d'installer et de configurer automatiquement **Graylog**, **Elasticsearch** et **MongoDB**.
+
+## Étape 3 : Accéder à l'interface web
+
+Une fois l'installation terminée, vous pouvez accéder à l'interface web de **Graylog** via votre navigateur en utilisant l'URL suivante :
+
+http://(votre-ip):9000
+
+Profitez d'une gestion centralisée et optimisée de vos logs avec Graylog !
